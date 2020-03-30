@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/whiteColor"
+        >
+
+
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+
+            />
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/copyB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:text=" Copy"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/button_shape"
+        android:layout_toRightOf="@+id/copyB"
+        android:padding="10dp"
+        android:text=" Click To Scan Text"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/shareB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:text=" Share"
+        android:layout_toRightOf="@+id/scanBtn"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+
+</RelativeLayout>
